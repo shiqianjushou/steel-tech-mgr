@@ -1,0 +1,6 @@
+{
+  "latest_version": "1.0.0",
+  "changelog": "正式版发布\n- 材料分析：Excel 导入（支持 .xls 与 GBK 文本伪 .xls）、自动识别、数据校验\n- 构件清单管理：生成、编辑、参考表替换对比\n- 板材预提料与采购计划：定尺 / 非定尺、现货产品库、规格网格搜索、利用率计算\n- 排料（套料）引擎：ironnest / pyckingsolver 选择，直条 / 方形 / 异形排样\n- 人工核算：材料核价法（板材 / 型材 / 部件），系数曲线可自定义\n- 油漆核算：涂层方案、损耗系数、色卡库（劳尔 RAL / 国标 GSB05）\n- Tekla 报表：3 模板识别规整、构件 / 散件清单、零件计划、Excel 导出\n- 按电脑授权激活，绑定机器码，防止拷贝扩散",
+  "download_url": "https://github.com/shiqianjushou/steel-tech-mgr/releases/download/v1.0.0/Setup-steel-tech-mgr-1.0.0.exe",
+  "sha256": "282cd12c19c2493ca09384bc120bc83a82aafcb66c61e904b88a0f1e2d5c8b48"
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "version": "1.0.0",
+    "date": "2026-10-01",
+    "title": "正式版 · 安装程序",
+    "size": "约 174 MB",
+    "status": "ready",
+    "url": "https://github.com/shiqianjushou/steel-tech-mgr/releases/download/v1.0.0/Setup-steel-tech-mgr-1.0.0.exe",
+    "changelog": [
+      "材料分析：Excel 导入（支持 .xls 与 GBK 文本伪 .xls）、自动识别、数据校验",
+      "构件清单管理：生成、编辑、参考表替换对比",
+      "板材预提料与采购计划：定尺 / 非定尺、现货产品库、规格网格搜索、利用率计算",
+      "排料（套料）引擎：ironnest / pyckingsolver 选择，直条 / 方形 / 异形排样",
+      "人工核算：材料核价法（板材 / 型材 / 部件），系数曲线可自定义",
+      "油漆核算：涂层方案、损耗系数、色卡库（劳尔 RAL / 国标 GSB05）",
+      "Tekla 报表：3 模板识别规整、构件 / 散件清单、零件计划、Excel 导出",
+      "按电脑授权激活，绑定机器码，防止拷贝扩散"
+    ]
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-10-01",
+    "title": "正式版 · 绿色免安装",
+    "size": "约 261 MB",
+    "status": "ready",
+    "url": "https://github.com/shiqianjushou/steel-tech-mgr/releases/download/v1.0.0/steel-tech-mgr-1.0.0.zip",
+    "changelog": [
+      "解压后直接运行「钢结构技术管理系统.exe」，无需安装",
+      "功能与安装版完全一致"
+    ]
+  },
+  {
+    "version": "0.9.0",
+    "date": "2026-08-20",
+    "title": "公测版",
+    "size": "—",
+    "status": "wait",
+    "url": "",
+    "changelog": [
+      "内部测试版本，仅对授权用户开放"
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>软件演示 - 钢结构技术管理系统</title>
+<meta name="description" content="钢结构技术管理系统六大模块功能演示：材料分析、预提料、排料、人工核算、油漆核算、Tekla 报表。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="demo">
+
+<header id="site-header"></header>
+
+<main>
+  <section class="page-hero blueprint">
+    <div class="container page-hero-inner">
+      <div class="section-eyebrow" style="color:#60a5fa">DEMO</div>
+      <h1>软件演示</h1>
+      <p>六大核心模块逐一介绍。以下为功能示意，实际界面以软件内为准（可在激活试用后运行软件查看真实界面）。</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:32px">
+    <div class="container">
+
+      <div class="demo-block reveal">
+        <div class="demo-img"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20desktop%20software%20interface%20for%20steel%20structure%20material%20analysis%20and%20member%20parts%20list%2C%20blue%20UI%20theme%20%232563eb%2C%20clean%20modern%20business%20application%2C%20tables%20with%20steel%20data%2C%20high%20detail%20screenshot&image_size=landscape_16_9" alt="材料分析与构件清单"></div>
+        <div>
+          <div class="demo-num">MODULE 01</div>
+          <h3>材料分析与构件清单</h3>
+          <p>导入材料分析表 / Tekla 报表 Excel，自动识别二进制 .xls 与文本伪 .xls，按标题自动归类零件。生成构件清单后可编辑、搜索筛选，并与参考表对比替换。</p>
+          <ul>
+            <li>真正的二进制 .xls 与 GBK 文本 .xls 双兼容导入</li>
+            <li>参考表替换：差异预览、原表 / 参考双列对照</li>
+            <li>数据校验：重量为 0、编号不连续、数量不一致标色提示</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="demo-block reverse reveal">
+        <div class="demo-img"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Steel%20plate%20warehouse%20with%20stacked%20carbon%20steel%20plates%2C%20industrial%20factory%20lighting%2C%20workers%20with%20forklift%2C%20professional%20photography%2C%20realistic&image_size=landscape_16_9" alt="板材预提料与采购计划"></div>
+        <div>
+          <div class="demo-num">MODULE 02</div>
+          <h3>板材预提料与采购计划</h3>
+          <p>按定尺 / 非定尺模式自动提料，匹配现货产品库，规格网格搜索最优组合，按品种合并生成采购计划表。</p>
+          <ul>
+            <li>定尺 / 非定尺提料，现货产品库智能匹配</li>
+            <li>规格网格搜索，面积 / 重量 / 金额 / 利用率一键计算</li>
+            <li>采购计划表 Excel 导出</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="demo-block reveal">
+        <div class="demo-img"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=CNC%20plasma%20cutting%20steel%20sheet%20with%20rectangular%20and%20irregular%20parts%20nested%20tightly%2C%20blue%20grid%20overlay%20lines%2C%20industrial%20workshop%2C%20realistic&image_size=landscape_16_9" alt="排料引擎"></div>
+        <div>
+          <div class="demo-num">MODULE 03</div>
+          <h3>排料（套料）引擎</h3>
+          <p>ironnest 与 pyckingsolver 双引擎可选，直条 / 方形 / 异形零件排样，支持裁断拼接，实时计算利用率。</p>
+          <ul>
+            <li>引擎可切换，裁断 / 拼接策略自由组合</li>
+            <li>CAD 式交互排样编辑器，零件拖放调整</li>
+            <li>板材使用计划表与 NC1 零件匹配</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="demo-block reverse reveal">
+        <div class="demo-img"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Construction%20project%20cost%20accounting%20spreadsheet%20on%20computer%20monitor%2C%20calculator%20and%20blue%20charts%20on%20desk%2C%20professional%20office%20environment%2C%20realistic&image_size=landscape_16_9" alt="人工核算"></div>
+        <div>
+          <div class="demo-num">MODULE 04</div>
+          <h3>人工核算（材料核价法）</h3>
+          <p>零件按材料分析表列结构自动分类板材 / 型材 / 外购，板材单价 = 基准价 × 板厚系数 × 面积系数，型材单价 = 基准价 × 规格系数 × 长度系数。</p>
+          <ul>
+            <li>板厚 / 面积 / 规格 / 长度系数曲线可自定义增删</li>
+            <li>备注含「成品 / 外购」自动识别为外购件</li>
+            <li>按构件汇总人工费，零件明细弹窗逐项核对</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="demo-block reveal">
+        <div class="demo-img"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Industrial%20steel%20beam%20being%20painted%20with%20blue%20protective%20coating%20in%20workshop%2C%20paint%20color%20chart%20cards%20with%20RAL%20color%20samples%2C%20professional%20photography&image_size=landscape_16_9" alt="油漆核算"></div>
+        <div>
+          <div class="demo-num">MODULE 05</div>
+          <h3>油漆核算</h3>
+          <p>涂层方案（底 / 中 / 面漆）逐层设色，损耗系数按截面库曲线，内置劳尔 RAL 与国标 GSB05 全系列色卡，支持在线更新色库。</p>
+          <ul>
+            <li>每层可单独设色，明细表按构件覆盖涂装颜色</li>
+            <li>色卡号自动补色，取色器双向联动</li>
+            <li>「是否涂装」按构件控制，用量随涂装状态联动</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="demo-block reverse reveal">
+        <div class="demo-img"><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=3D%20steel%20structure%20building%20frame%20model%20on%20computer%20screen%2C%20structural%20engineering%20BIM%20software%2C%20blue%20wireframe%20rendering%2C%20dark%20engineering%20background&image_size=landscape_16_9" alt="Tekla 报表"></div>
+        <div>
+          <div class="demo-num">MODULE 06</div>
+          <h3>Tekla 报表导入与导出</h3>
+          <p>内置 3 套模板识别规整，自动拆分 PL 型材、换算面积，生成构件 / 散件清单、材料计划与板材 / 型材零件计划。</p>
+          <ul>
+            <li>3 模板（A / B / C）自动识别与规整</li>
+            <li>构件 / 散件清单、材料计划、零件计划全覆盖</li>
+            <li>Excel 原子写导出，格式与软件内一致</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
