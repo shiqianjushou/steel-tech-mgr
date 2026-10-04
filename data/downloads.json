@@ -18,18 +18,6 @@
     ]
   },
   {
-    "version": "1.0.0",
-    "date": "2026-10-01",
-    "title": "正式版 · 绿色免安装",
-    "size": "约 261 MB",
-    "status": "ready",
-    "url": "https://github.com/shiqianjushou/steel-tech-mgr/releases/download/v1.0.0/steel-tech-mgr-1.0.0.zip",
-    "changelog": [
-      "解压后直接运行「钢结构技术管理系统.exe」，无需安装",
-      "功能与安装版完全一致"
-    ]
-  },
-  {
     "version": "0.9.0",
     "date": "2026-08-20",
     "title": "公测版",
