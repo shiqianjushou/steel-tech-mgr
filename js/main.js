@@ -109,7 +109,7 @@
           "</div>" +
         "</div>" +
         '<div class="footer-bottom">' +
-          '<span style="color:#6b7280;font-size:12px;">本站总访问 <span id="busuanzi_value_site_pv">0</span> 次 · 访客 <span id="busuanzi_value_site_uv">0</span> 人</span>' +
+          '<span id="busuanzi-row" style="color:#6b7280;font-size:12px;">本站总访问 <span id="busuanzi_value_site_pv">0</span> 次 · 访客 <span id="busuanzi_value_site_uv">0</span> 人</span>' +
           "<span>© 2026 钢结构技术管理系统 · 保留所有权利</span>" +
           "<span>按电脑授权 · 一个授权码绑定一台电脑</span>" +
         "</div>" +
@@ -254,4 +254,13 @@
     renderNews();
     initReveal();
   });
+
+  /* 不蒜子兜底：15 秒仍未取到数据则隐藏访问量行，避免一直转圈 */
+  setTimeout(function () {
+    var pv = document.getElementById("busuanzi_value_site_pv");
+    if (pv && pv.textContent.trim() === "0") {
+      var row = document.getElementById("busuanzi-row");
+      if (row) row.style.display = "none";
+    }
+  }, 15000);
 })();
