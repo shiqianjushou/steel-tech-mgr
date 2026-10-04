@@ -11,6 +11,7 @@
     { href: "download.html", label: "软件下载", key: "download" },
     { href: "demo.html",     label: "软件演示", key: "demo" },
     { href: "news.html",     label: "软件动态", key: "news" },
+    { href: "help.html",     label: "安装说明", key: "help" },
     { href: "contact.html",  label: "联系我们", key: "contact" },
     { href: "purchase.html", label: "软件购买", key: "purchase" }
   ];
