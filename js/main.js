@@ -6,6 +6,14 @@
 (function () {
   "use strict";
 
+  /* 百度统计（全站访问统计）：统计访问量、访客、来源、地域等 */
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?2cad1c11782f3c71ec9723071d0dc23c";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
   var NAV = [
     { href: "index.html",    label: "首页",     key: "home" },
     { href: "download.html", label: "软件下载", key: "download" },
