@@ -211,11 +211,31 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
+  /* 下载次数：读取 GitHub Release 累计下载量（API 被墙/失败时静默隐藏，不影响页面） */
+  function renderDlStats() {
+    var el = $("#dl-stats");
+    if (!el) return;
+    fetch("https://api.github.com/repos/shiqianjushou/steel-tech-mgr/releases/latest")
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (!data || !data.assets) return;
+        var total = data.assets.reduce(function (s, a) {
+          return s + (a.download_count || 0);
+        }, 0);
+        el.innerHTML =
+          '本站安装包累计下载 <b style="font-size:18px;color:var(--brand)">' +
+          total.toLocaleString("zh-CN") + "</b> 次";
+        el.style.display = "block";
+      })
+      .catch(function () { /* 网络原因取不到则保持隐藏 */ });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderHeader();
     renderFooter();
     renderHome();
     renderDownloads();
+    renderDlStats();
     renderNews();
     initReveal();
   });
