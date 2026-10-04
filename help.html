@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安装与安全说明 - 钢结构技术管理系统</title>
+<meta name="description" content="钢结构技术管理系统安装步骤、Windows 安全提示处理、杀毒软件白名单设置与常见问题。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="help">
+
+<header id="site-header"></header>
+
+<main>
+  <section class="page-hero blueprint">
+    <div class="container page-hero-inner">
+      <div class="section-eyebrow" style="color:#60a5fa">INSTALL &amp; SAFETY</div>
+      <h1>安装与安全说明</h1>
+      <p>从下载到运行的全部注意事项：浏览器提示、SmartScreen、杀毒软件误报的处理方法，以及常见问题解答。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="panel-info">
+        <h4>一、安装步骤</h4>
+        <ol style="line-height:2.1;color:var(--ink-3)">
+          <li>在「软件下载」页点击<b>下载安装包</b>（约 174 MB），保存到电脑任意位置。</li>
+          <li>双击运行 <code>Setup-steel-tech-mgr-1.0.0.exe</code>，按提示点击「下一步 / 安装」。</li>
+          <li>安装完成后软件自动启动，进入<b>试用或激活</b>流程。</li>
+          <li>新用户：试用期为 30 天，直接点击「进入软件」即可使用。</li>
+          <li>试用到期后需激活：在激活窗口复制<b>机器码</b>，联系开发者获取授权码后粘贴激活。</li>
+        </ol>
+      </div>
+
+      <div class="panel-info" style="margin-top:26px">
+        <h4>二、下载与运行时的系统提示（正常现象，可放心通过）</h4>
+        <p style="color:var(--ink-3);font-size:14px">以下提示是 Windows 和浏览器对所有<b>未签名软件</b>的统一提醒，并非病毒告警：</p>
+        <table class="help-table" style="width:100%;border-collapse:collapse;margin-top:10px">
+          <thead>
+            <tr style="text-align:left;background:var(--bg-2)">
+              <th style="padding:8px 12px;border:1px solid var(--line)">提示场景</th>
+              <th style="padding:8px 12px;border:1px solid var(--line)">提示内容</th>
+              <th style="padding:8px 12px;border:1px solid var(--line)">正确操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px 12px;border:1px solid var(--line)">浏览器下载</td>
+              <td style="padding:8px 12px;border:1px solid var(--line)">此类型的文件可能损害你的计算机</td>
+              <td style="padding:8px 12px;border:1px solid var(--line)">点击「保留」继续下载</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;border:1px solid var(--line)">Windows 首次运行</td>
+              <td style="padding:8px 12px;border:1px solid var(--line)">Windows 已保护你的电脑 / 未知发布者</td>
+              <td style="padding:8px 12px;border:1px solid var(--line)">点「更多信息」→「仍要运行」</td>
+            </tr>
+            <tr>
+              <td style="padding:8px 12px;border:1px solid var(--line)">杀毒软件（360 / 火绒 / 腾讯管家等）</td>
+              <td style="padding:8px 12px;border:1px solid var(--line)">风险程序 / 未知文件拦截</td>
+              <td style="padding:8px 12px;border:1px solid var(--line)">选择「信任 / 允许运行」，并加入白名单</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="color:var(--ink-3);font-size:13.5px;margin-top:10px">
+          说明：本软件未经第三方数字签名，因此会有以上提示；这不会影响使用。我们也在持续优化兼容性，降低误报概率。
+        </p>
+      </div>
+
+      <div class="panel-info" style="margin-top:26px">
+        <h4>三、把软件加入杀毒软件白名单（推荐，一劳永逸）</h4>
+        <p style="color:var(--ink-3);font-size:14px">安装完成后，将软件目录加入杀毒软件信任区，之后启动就不会再被拦截：</p>
+        <ul style="line-height:2.1;color:var(--ink-3)">
+          <li><b>安装版默认目录</b>：<code>C:\Users\你的用户名\AppData\Local\Programs\钢结构技术管理系统</code></li>
+          <li><b>Windows Defender</b>：设置 → 隐私和安全性 → Windows 安全中心 → 病毒和威胁防护 → 排除项 → 添加该文件夹</li>
+          <li><b>360 / 火绒 / 腾讯管家</b>：打开「信任区 / 白名单」，添加上述文件夹</li>
+        </ul>
+      </div>
+
+      <div class="panel-info" style="margin-top:26px">
+        <h4>四、常见问题</h4>
+        <ul style="line-height:2.1;color:var(--ink-3)">
+          <li><b>下载速度慢或无法下载？</b> 受网络环境影响，可换网络重试，或联系开发者获取网盘备用下载。</li>
+          <li><b>双击安装包没反应？</b> 右键 → 以管理员身份运行；或确认杀毒软件未拦截。</li>
+          <li><b>安装后打开软件弹出激活窗口？</b> 正常流程：新用户为 30 天试用，可直接使用；试用结束需激活。</li>
+          <li><b>如何获取授权码？</b> 激活窗口复制机器码，微信联系开发者，通常当日回复。</li>
+          <li><b>软件会不会破坏我的数据？</b> 不会。软件只写用户数据目录（%APPDATA%），重装、卸载、更新均不会删除您的工程与配置。</li>
+        </ul>
+      </div>
+
+      <div class="panel-info" style="margin-top:26px">
+        <h4>五、仍遇到问题？</h4>
+        <p style="color:var(--ink-3);font-size:14px">
+          请前往「<a href="contact.html" style="color:var(--brand)">联系我们</a>」页添加微信，发送截图或报错信息，我们会尽快协助解决。
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
