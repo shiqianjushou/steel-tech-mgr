@@ -14,14 +14,8 @@
     s.parentNode.insertBefore(hm, s);
   })();
 
-  /* 不蒜子：页脚公开显示访问量（免费、国内直连、无需注册） */
-  (function () {
-    var bs = document.createElement("script");
-    bs.async = true;
-    bs.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bs, s);
-  })();
+  /* 不蒜子移除（2026-10-04）：其数据请求在部分网络下挂起导致标签页一直加载、页脚转圈。
+     访问统计改用百度统计（后台查看），页脚不再公开显示访问量。 */
 
   var NAV = [
     { href: "index.html",    label: "首页",     key: "home" },
@@ -109,7 +103,6 @@
           "</div>" +
         "</div>" +
         '<div class="footer-bottom">' +
-          '<span id="busuanzi-row" style="color:#6b7280;font-size:12px;">本站总访问 <span id="busuanzi_value_site_pv">0</span> 次 · 访客 <span id="busuanzi_value_site_uv">0</span> 人</span>' +
           "<span>© 2026 钢结构技术管理系统 · 保留所有权利</span>" +
           "<span>按电脑授权 · 一个授权码绑定一台电脑</span>" +
         "</div>" +
@@ -254,13 +247,4 @@
     renderNews();
     initReveal();
   });
-
-  /* 不蒜子兜底：15 秒仍未取到数据则隐藏访问量行，避免一直转圈 */
-  setTimeout(function () {
-    var pv = document.getElementById("busuanzi_value_site_pv");
-    if (pv && pv.textContent.trim() === "0") {
-      var row = document.getElementById("busuanzi-row");
-      if (row) row.style.display = "none";
-    }
-  }, 15000);
 })();
