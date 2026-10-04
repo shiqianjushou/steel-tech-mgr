@@ -247,6 +247,7 @@ img { max-width: 100%; display: block; }
   padding: 26px 28px; margin-bottom: 18px; transition: all .2s ease; background: var(--bg);
 }
 .dl-card:hover { box-shadow: var(--shadow-md); border-color: #bfdbfe; }
+.dl-type { font-size: 13px; font-weight: 600; color: var(--brand); margin-bottom: 6px; }
 .dl-top { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
 .dl-ver { font-family: var(--mono); font-size: 24px; font-weight: 700; color: var(--brand-dark); }
 .dl-date { font-size: 13px; color: var(--ink-4); }
