@@ -3,8 +3,9 @@
     "version": "1.0.0",
     "date": "2026-10-01",
     "title": "正式版 · 安装程序",
-    "size": "约 174 MB",
+    "size": "约 173.5 MB",
     "status": "ready",
+    "dl_count": 0,
     "url": "https://github.com/shiqianjushou/steel-tech-mgr/releases/download/v1.0.0/Setup-steel-tech-mgr-1.0.0.exe",
     "changelog": [
       "材料分析：Excel 导入（支持 .xls 与 GBK 文本伪 .xls）、自动识别、数据校验",
