@@ -27,7 +27,7 @@
   /* 兜底种子数据：联网 / 文件协议（file://）拉不到 JSON 时也能展示，
      托管到 GitHub Pages 后由 data/*.json 覆盖。 */
   var SEED_DOWNLOADS = [
-    { version: "1.0.0", date: "2026-10-01", status: "ready",
+    { version: "1.0.0", date: "2026-10-01", status: "ready", dl_count: 0,
       title: "正式版发布", size: "约 180 MB",
       changelog: ["首版正式发布", "材料分析 / 构件清单管理", "板材预提料与采购计划", "排料（套料）引擎", "人工核算 / 油漆核算", "Tekla 报表导入与导出"] },
     { version: "0.9.0", date: "2026-08-20", status: "wait",
@@ -219,23 +219,20 @@
     els.forEach(function (el) { io.observe(el); });
   }
 
-  /* 下载次数：读取 GitHub Release 累计下载量（API 被墙/失败时静默隐藏，不影响页面） */
+  /* 下载次数：读本地 downloads.json 的 dl_count 快照（发布时自动刷新；不依赖 GitHub API，国内可正常显示） */
   function renderDlStats() {
     var el = $("#dl-stats");
     if (!el) return;
-    fetch("https://api.github.com/repos/shiqianjushou/steel-tech-mgr/releases/latest")
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (data) {
-        if (!data || !data.assets) return;
-        var total = data.assets.reduce(function (s, a) {
-          return s + (a.download_count || 0);
-        }, 0);
-        el.innerHTML =
-          '本站安装包累计下载 <b style="font-size:18px;color:var(--brand)">' +
-          total.toLocaleString("zh-CN") + "</b> 次";
-        el.style.display = "block";
-      })
-      .catch(function () { /* 网络原因取不到则保持隐藏 */ });
+    loadJSON("data/downloads.json", SEED_DOWNLOADS, function (list) {
+      var total = 0;
+      for (var i = 0; i < list.length; i++) {
+        total += list[i].dl_count || 0;
+      }
+      el.innerHTML =
+        '本站安装包累计下载 <b style="font-size:18px;color:var(--brand)">' +
+        total.toLocaleString("zh-CN") + "</b> 次";
+      el.style.display = "block";
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
