@@ -157,13 +157,16 @@
     loadJSON("data/downloads.json", SEED_DOWNLOADS, function (list) {
       box.innerHTML = list.map(function (v) {
         var ready = v.status === "ready";
+        var isZip = /\.zip$/i.test(v.url || "");
+        var btnText = isZip ? "下载绿色版" : "下载安装包";
         var dlBtn = ready
           ? (v.url
-              ? '<a class="btn btn-primary" href="' + v.url + '">下载安装包</a>'
+              ? '<a class="btn btn-primary" href="' + v.url + '">' + btnText + "</a>"
               : '<a class="btn btn-primary" href="contact.html">联系获取安装包</a>')
           : '<span class="btn btn-line" disabled>敬请期待</span>';
         var notes = (v.changelog || []).map(function (t) { return "<li>" + t + "</li>"; }).join("");
         return '<div class="dl-card">' +
+          '<div class="dl-type">' + (v.title || "") + "</div>" +
           '<div class="dl-top">' +
             '<span class="dl-ver">v' + v.version + "</span>" +
             '<span class="dl-date">' + v.date + "</span>" +
