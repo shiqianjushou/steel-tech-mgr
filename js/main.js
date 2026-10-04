@@ -14,6 +14,15 @@
     s.parentNode.insertBefore(hm, s);
   })();
 
+  /* 不蒜子：页脚公开显示访问量（免费、国内直连、无需注册） */
+  (function () {
+    var bs = document.createElement("script");
+    bs.async = true;
+    bs.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bs, s);
+  })();
+
   var NAV = [
     { href: "index.html",    label: "首页",     key: "home" },
     { href: "download.html", label: "软件下载", key: "download" },
@@ -100,6 +109,7 @@
           "</div>" +
         "</div>" +
         '<div class="footer-bottom">' +
+          '<span style="color:#6b7280;font-size:12px;">本站总访问 <span id="busuanzi_value_site_pv">0</span> 次 · 访客 <span id="busuanzi_value_site_uv">0</span> 人</span>' +
           "<span>© 2026 钢结构技术管理系统 · 保留所有权利</span>" +
           "<span>按电脑授权 · 一个授权码绑定一台电脑</span>" +
         "</div>" +
