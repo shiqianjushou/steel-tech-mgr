@@ -9,6 +9,7 @@
   /* 百度统计（全站访问统计）：统计访问量、访客、来源、地域等 */
   (function () {
     var hm = document.createElement("script");
+    hm.async = true;   /* 异步加载，避免其域名慢时影响页面加载 */
     hm.src = "https://hm.baidu.com/hm.js?2cad1c11782f3c71ec9723071d0dc23c";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
